@@ -1,0 +1,32 @@
+{
+    "posts": [
+    {
+      "userId": 1,
+      "id": "2",
+      "title": "Nature",
+      "body": "A soft sunlight filtering through the leaves.",
+      "image": "https://offbeatjapan.com/wp-content/uploads/2024/01/serene-forest-path-jinjoji-temple.jpg"
+    },
+    {
+      "userId": 1,
+      "id": "3",
+      "title": "vibrant",
+      "body": "Football and BasketBall is the most passionate sport in the World",
+      "image": "https://res.cloudinary.com/dcja3tpf1/image/upload/v1753128576/bf2pvvybghldcuce6daf.jpg"
+    },
+     {
+      "userId": 1,
+      "id": "3",
+      "title": "Russia",
+      "body": "Russia,[b] or the Russian Federation,[c] is a country spanning Eastern Europe and North Asia. It is the largest country in the world, and extends across eleven time zones.",
+      "image": "https://news.exeter.ac.uk/wp-content/uploads/2023/08/Untitled39.jpg"
+    },
+    {
+      "userId": 1,
+      "id": "3",
+      "title": "America",
+      "body": "The United States of America (USA), also known as the United States (U.S.) or America, is a country primarily located in North America. It is a federal republic of 50 states and a federal capital district, Washington, D.C.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3tw7s1os2ontfUi8DPIwmnb-6rmxcivCrg&s"
+    }
+  ]
+}
