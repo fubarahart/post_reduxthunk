@@ -12,4 +12,13 @@ form {
   width: 300px;
   background-color: burlywood;
   padding: 5%;
-}
+} 
+
+.modal {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  width: 80%;
+  height: 600px;
+  z-index: 50;
+}  

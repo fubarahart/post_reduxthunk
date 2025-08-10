@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const AddPost = () => {
   const [image, setImage] =  useState([])
@@ -20,11 +21,24 @@ const AddPost = () => {
         obj.append("upload_preset", "Fubara");
         //obj={file:image, upload_preset:"Fubara"}; (Another way to create FormData object)
         const response = await axios.post("https://api.cloudinary.com/v1_1/dcnuxywya/image/upload", obj)
-        console.log(response);
+        console.log(response.data.secure_url)
+
+        const newpostResponse = await axios.post("http://localhost:3000/posts", {
+          title: title,
+          body: body,
+          image: response.data.secure_url,
+          id: String(Math.random()),
+          userId: 2
+        }) 
+        console.log(newpostResponse)
+        if (newpostResponse.status===201) {
+          // Post was created successfully
+          toast.success("Post created successfully!")
+        }
       }
     } catch (error) {
       console.log(error)
-      
+      toast.error("Post creation failed!")
     }
     
   }

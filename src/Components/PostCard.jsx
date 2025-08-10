@@ -14,6 +14,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Button from '@mui/material/Button';
+import { ButtonGroup } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { deletepost } from '../Redux/Action';
+import UpdatePost from './UpdatePost';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -41,6 +46,7 @@ const ExpandMore = styled((props) => {
 
 export default function PostCard({post}) {
   const [expanded, setExpanded] = React.useState(false);
+  const dispatch = useDispatch();
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -72,6 +78,10 @@ export default function PostCard({post}) {
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           {post.body}
         </Typography>
+        <ButtonGroup variant="contained" aria-label="Basic button group">
+          <UpdatePost post={post} />
+          <Button onClick={() => dispatch(deletepost(post.id))}>Delete</Button>
+        </ButtonGroup>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">

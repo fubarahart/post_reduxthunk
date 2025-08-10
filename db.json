@@ -1,20 +1,20 @@
 {
-    "posts": [
+  "posts": [
     {
       "userId": 1,
-      "id": "2",
-      "title": "Nature",
+      "id": "1",
+      "title": "Nature Fields",
       "body": "A soft sunlight filtering through the leaves.",
       "image": "https://offbeatjapan.com/wp-content/uploads/2024/01/serene-forest-path-jinjoji-temple.jpg"
     },
     {
       "userId": 1,
-      "id": "3",
-      "title": "vibrant",
-      "body": "Football and BasketBall is the most passionate sport in the World",
+      "id": "2",
+      "title": "Vibrant Boy",
+      "body": "Basket Ballers, why the white man can't jump",
       "image": "https://res.cloudinary.com/dcja3tpf1/image/upload/v1753128576/bf2pvvybghldcuce6daf.jpg"
     },
-     {
+    {
       "userId": 1,
       "id": "3",
       "title": "Russia",
@@ -23,10 +23,24 @@
     },
     {
       "userId": 1,
-      "id": "3",
+      "id": "4",
       "title": "America",
       "body": "The United States of America (USA), also known as the United States (U.S.) or America, is a country primarily located in North America. It is a federal republic of 50 states and a federal capital district, Washington, D.C.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3tw7s1os2ontfUi8DPIwmnb-6rmxcivCrg&s"
+    },
+    {
+      "id": "0.3428902169501581",
+      "title": "Places",
+      "body": "Beautiful View, Fresh Wind",
+      "image": "https://res.cloudinary.com/dcnuxywya/image/upload/v1754735644/tc1ar9e8k812qrt3zdwh.webp",
+      "userId": 2
+    },
+    {
+      "id": "0.5636607555022365",
+      "title": "Nature Art",
+      "body": "Simply Flushy Smoothy",
+      "image": "https://res.cloudinary.com/dcnuxywya/image/upload/v1754737736/gblagehfcxp7ycmoab8b.jpg",
+      "userId": 2
     }
   ]
 }
